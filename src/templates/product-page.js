@@ -61,7 +61,7 @@ export default function ProductPage({ data }) {
           data-item-custom1-options={colourName}
           data-item-price={data.markdownRemark.frontmatter.price}
           data-item-url={
-            "https://jovial-lichterman-125425.netlify.com" +
+            "https://relaxed-hawking-058c9d.netlify.app" +
             data.markdownRemark.fields.slug
           }
           data-item-name={data.markdownRemark.frontmatter.name}
