@@ -8,7 +8,11 @@ public_folder: /assets
 collections:
   - name: product
     label: Product
-    folder: content/products
+    folder: src/content/products
     create: true
     fields:
       - { name: name, label: Name }
+      - { name: image, label: Image }
+      - { name: price, label: Price, valueType: int }
+      - { name: id, label: ID }
+      - { name: body, label: Description, widget: markdown }

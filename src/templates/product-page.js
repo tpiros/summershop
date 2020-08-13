@@ -61,7 +61,7 @@ export default function ProductPage({ data }) {
           data-item-custom1-options={colourName}
           data-item-price={data.markdownRemark.frontmatter.price}
           data-item-url={
-            "https://relaxed-hawking-058c9d.netlify.app" +
+            "https://inspiring-blackwell-7a9dc1.netlify.app/" +
             data.markdownRemark.fields.slug
           }
           data-item-name={data.markdownRemark.frontmatter.name}
