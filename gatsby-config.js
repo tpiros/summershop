@@ -1,6 +1,4 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
@@ -8,7 +6,7 @@ module.exports = {
     description: `SummerShop - Your Favourite Online Store`,
     author: `Tamas Piros`,
     company: `Full Stack Training Ltd`,
-    companyWebsite: `https://fullstacktraining.com`
+    companyWebsite: `https://fullstacktraining.com`,
   },
   plugins: [
     { resolve: `gatsby-plugin-postcss` },
@@ -32,10 +30,10 @@ module.exports = {
       resolve: `gatsby-plugin-snipcart`,
       options: {
         apiKey: process.env.SNIPCART,
-        js: `https://cdn.snipcart.com/themes/v3.0.19/default/snipcart.js`,
-        styles: `https://cdn.snipcart.com/themes/v3.0.19/default/snipcart.css`,
-        autopop: true
-      }
-    }
+        js: `https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.js`,
+        styles: `https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.css`,
+        autopop: true,
+      },
+    },
   ],
 }

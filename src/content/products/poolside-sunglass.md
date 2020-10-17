@@ -8,6 +8,6 @@ id: prod-4
 
 ## Product Description
 
-Shades that you can wear in a pool. Great summer choice.
+Shades that you can wear in a pool. Great summer choice. Best shades ever!
 
 > Photo credit Alexandru Acea (https://unsplash.com/@alexacea)

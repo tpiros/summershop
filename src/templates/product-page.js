@@ -6,28 +6,28 @@ import ColourSelect from "../components/colour-select"
 export default function ProductPage({ data }) {
   const [colourTransformation, setColour] = useState("")
   let [colourName, getColour] = useState("")
-  let [imgsrc, setImgsrc] = useState('');
+  let [imgsrc, setImgsrc] = useState("")
   const imageRef = useRef()
-  
+
   if (colourName.length === 0) {
-    getColour(() => colourName = 'original')
+    getColour(() => (colourName = "original"))
   }
 
   useEffect(() => {
-    setImgsrc(() => imageRef.current.src);
+    setImgsrc(() => imageRef.current.src)
     if (imageRef.current) {
       const observer = new MutationObserver(muts => {
         muts.forEach(m => {
-          if (m.type === 'attributes' && m.attributeName === 'src') {
-            setImgsrc(() => m.target.src);
+          if (m.type === "attributes" && m.attributeName === "src") {
+            setImgsrc(() => m.target.src)
           }
-        });
-      });
+        })
+      })
       observer.observe(imageRef.current, {
-        attributes: true
+        attributes: true,
       })
     }
-  }, [imgsrc]);
+  }, [imgsrc])
 
   return (
     <div className="flex flex-col md:flex-row">
@@ -61,8 +61,7 @@ export default function ProductPage({ data }) {
           data-item-custom1-options={colourName}
           data-item-price={data.markdownRemark.frontmatter.price}
           data-item-url={
-            "https://inspiring-blackwell-7a9dc1.netlify.app/" +
-            data.markdownRemark.fields.slug
+            "http://localhost:8000/" + data.markdownRemark.fields.slug
           }
           data-item-name={data.markdownRemark.frontmatter.name}
           data-item-image={imgsrc}

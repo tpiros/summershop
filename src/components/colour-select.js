@@ -23,6 +23,10 @@ function ColourSelect({ changeColour, getColourName }) {
       hex: "ff0000",
     },
     {
+      name: "Unknown colour",
+      hex: "be6511",
+    },
+    {
       name: "original",
       hex: "d79025",
     },
